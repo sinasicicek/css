@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<style>
+    .cerceve 
+    {
+        border-width: 5px;
+        border-style: solid;
+        border-radius: 3px;
+        border-color: red;
+     }
+    p:hover
+    {
+        color: hotpink;
+    }
+    a.sinasi:hover
+    {
+        color: hotpink;
+    }
+
+ul li
+{
+    background-color: blue;
+}
+    p.hilal::first-line 
+    {
+        color: lightseagreen;
+    }
+    ul li:first-child
+        {
+            background-color:green ; 
+        }
+        span 
+            {
+                display: none;
+                background-color:yellow ;
+             }
+            div:hover span 
+            {
+                display : block ;
+             }
+</style>
+    <title></title>
+  </head>
+  <body>
+<div class="tab-content" id="nav-tabContent" >
+
+    <div class="kullanim">
+    
+        <h3>Kullanımı 2 ayrılır :
+            <ul>
+                <li>Pseudo Element : Herhangi bir elemanın bir parçasını seçmek için kullanılır</li>
+                <li>Pseudo Class : Elemanın alt elemanlarını seçerken kullanılır.Yani Bir alt öge seçi
+                    mi yapılır
+                </li>
+            </ul>
+        </h3>
+    </div>
+
+   <div class="eleman-sec">
+    <h1>Eleman Seçme</h1>
+    <p class="alert-warning">
+        Burada bulunan p etiketlerinin için yazılan bu yazının  üstüne gelindiginde rengini degiştirmek
+        için gerekli kod yapısı 
+        <xmp class=" cerceve alert-warning">
+            p :hover 
+            {
+                color : hotpink
+             }
+             // Burada p etiketine sahip hangi elemanın üstüne mouse ile  gelirsen rengi degişir
+        </xmp>
+    </p>
+   </div>
+
+   <div class="eleman-class-ulasma">
+    <h1>Elemanların classlarına ulaşma</h1>
+    <p class="hilal">Burada p etiketlerinden class adı hilal olanların ilk satrıları
+         rengi degişicektir
+        <xmp class="cerceve">
+            p.hilal::first-line 
+            {
+                color:lightseagreen;
+            }
+
+            <p class="hilal"></p>
+        </xmp>
+    </p>
+
+   </div>
+<div class="baskaElementUlasma">
+    <p>Bir tag için oluşan olay sonucunda başka bir tag etkilenebilir
+        <xmp>
+            span 
+            {
+                display: none;
+                background-color:yellow ;
+             }
+            div:hover span 
+            {
+                display : block ;
+             }
+        </xmp>
+        <div>Herhangi bir div alanına geldiginde <span>Bu alan</span> rengi degişicektir</div>
+    </p>
+</div>
+    <div class="eleman-eleman alert-secondary">
+        <h1>Eleman içinde eleman Seçimi</h1>
+        <ul class="sehir">
+            <li>İstanbul</li>
+            <li>Ankara</li>
+            <li>Ordu</li>
+        </ul>
+<p>Yukarıdaki illere ulaşmak için
+    <xmp>
+        ul li 
+            {
+                background-color: blue;
+            }
+    </xmp>
+Sayfa içindeki tüm ul içindeki li etiketleri için geçerli oluacaktır
+</p>
+
+<p>ul içindeki li ilk elemanını seçip arka planını degiştirmek için 
+    <xmp>
+        ul li:first-child
+        {
+            background-color:green ; 
+        }
+        ilk elemanı arka plan rengi yeşil olucaktır
+    </xmp>
+</p>
+
+    </p>
+       </div>
+    </div>
+</div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
