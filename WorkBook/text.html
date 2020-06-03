@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Selected</title>
+    <link rel="stylesheet" href="/tasarim.css" />
+    <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+    crossorigin="anonymous"
+  />
+  </head>
+  <body>
+  
+      <div class="accordion sinasi" id="accordionExample">
+
+        <!--metin rengi -->
+          <div class="card">
+            <div class="card-header" id="headingOne">
+              <h2 class="mb-0">
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                 Metin Rengi
+                </button>
+              </h2>
+            </div>
+        
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+              <div class="card-body">
+                     Metinsel ifadelerdein rengini degiştirmek için 
+                    <xmp>    p { color :red ;}</xmp>
+              </div>
+            </div>
+          </div>
+
+
+      <!--Metinlerin akış yönleri -->
+          <div class="card">
+            <div class="card-header" id="headingTwo">
+              <h2 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Metinlerin Akış yönleri
+                </button>
+              </h2>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+              <div class="card-body">
+                   Metinsel ifadelerin akış yönlerini belirlemek için <strong>text-align</strong> kullanılır 
+                   <xmp> .class_adi { text-align: center ;} </xmp>
+                   <p style="text-align:justify;" id="metinsel">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                      Quo e quisquam unde quibusdam
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                      Quo e quisquam unde quibusdam
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                      Quo e quisquam unde quibusdamLorem ipsum dolor sit amet consectetur adipisicing elit. 
+                      Quo e quisquam unde quibusdam
+                    </p>
+                   <ul class="text" >
+                     <li>
+                       <strong>end</strong> :Metinsel ifadeler önce sona yani sondan başa dogru dizilir.
+                       Ancak okuma yine soldan saga dogrudur.Aşagıdaki örnekte oldugu gibi
+                        <button type="button" class="btn1" id="end">Göster</button>
+                     </li>
+                     <li>
+                       <strong>Justify </strong>:Sagdan ve soldan eşit aralıklarda boşluk verilerek
+                       olusturulur.Kitap düzeni şeklindedir.                 
+                        <button class="btn1" id="justify">Göster</button>
+                     </li>
+                     <li>
+                       <strong>left</strong> : Sol tarafa hizalanır
+                       <xmp> .class_adi { text-align: left ;} </xmp>
+                       <button class="btn1" id="left">Göster</button>
+                     </li>
+                     <li>
+                       <strong>right</strong>:Sag tarafa hizalanır
+                       <xmp> .class_adi { text-align: right ;} </xmp>
+                       <button class="btn1" id="right">Göster</button>
+                     </li>
+                     <li>
+                        <strong>Center</strong> : Merkez Noktada konumlanır
+                        <xmp> .class_adi { text-align: center ;} </xmp>
+                        <button class="btn1" id="center">Göster</button>
+                     </li>
+                   </ul>
+                   
+
+              </div>
+            </div>
+          </div>
+
+
+            <!--Satırlar Arası Boşluklar-->
+          <div class="card">
+            <div class="card-header" id="headingThree">
+              <h2 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Satırlar Arası Boşluk
+                </button>
+              </h2>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+              <div class="card-body">
+                <p style="line-height:80px; border-style: solid blue ;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam fugit nobis tenetur sit. 
+                  Ea neque ipsum atque quod veniam? 
+                  Exercitationem animi amet possimus mollitia eos molestiae sunt obcaecati ab omnis.
+                </p>
+                <strong>Yukarıdaki örnekte 1 satır ile ikinci satır arasında 80 px boşluk
+                  oluşturulmuştur
+                </strong>
+
+              <xmp>   p { line-heigt=80px;}</xmp>
+              </div>
+            </div>
+          </div>
+
+
+             <!--font-family-->
+             <div class="card">
+                <div class="card-header" id="headingThree">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#icice" aria-expanded="false" aria-controls="collapseThree">
+                        Font Family(Metin Yazı Biçimi )
+                    </button>
+                  </h2>
+                </div>
+                <div id="icice" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                  <div class="card-body">
+                    <p id="family">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                      Quam nobis, incidunt tenetur voluptatum earum voluptatibus vitae laudantium unde molestiae praesentium, 
+                      perferendis laborum vel facere debitis, alias odit placeat ipsa aut?</p>
+                      <button id="familyD">Degiştir</button>
+                  <xmp>  p { font-family: "Courier New", Courier, monospace;; }</xmp>
+                  </div>
+                </div>
+             </div>
+
+
+
+
+
+             <!--font-style-->
+             <div class="card">
+                <div class="card-header" id="headingThree">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#kalinlik" aria-expanded="false" aria-controls="collapseThree">
+                        Font Style
+                    
+                    </button>
+                  </h2>
+                </div>
+                <div id="kalinlik" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                  <div class="card-body">
+                   <p id="weig">Burdaki metinsel ifdanın kalınlıgını degiştirmek için butonları kullanabiliriz</p>
+                  
+                   <p>İtalic</p>
+                   <p>Normal</p>
+                   <p>Oblique</p>
+                  <xmp>  p {  font-Style : oblique; }</xmp>
+                  
+                  </div>
+                </div>
+             </div>
+
+
+          <!--Girinti-->
+          <div class="card">
+              <div class="card-header" id="headingThree">
+                <h2 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#girinti" aria-expanded="false" aria-controls="collapseThree">
+                    Girinti Olusturma
+                  </button>
+                </h2>
+              </div>
+              <div id="girinti" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                <div class="card-body">
+                <p id="girintiMetin" style="text-indent:20px;">Burdaki metin de girinti yok olusturmak için buton tıkla</p>
+                  <xmp>p { text-indent:20px ;}</xmp>
+              <p >Yukarıdaki metin 20px içeriye girinti olusturmustur</p>  
+              </div>
+              </div>
+           </div>
+
+          <!--Kelimeler Arası Boşluk-->
+          <div class="card">
+              <div class="card-header" id="headingThree">
+                <h2 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#hecebosluk" aria-expanded="false" aria-controls="collapseThree">
+                    Heceler Arası Boşluk 
+                  </button>
+                </h2>
+              </div>
+              <div id="hecebosluk" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                <div class="card-body">
+                <p id="girintiMetin" style="letter-spacing:20px;">Burdaki metin de girinti yok olusturmak için buton tıkla</p>
+                  <xmp>p { letter-spacing:20px}</xmp>
+              <p >Yukarıdaki metinde her bir harf arasında 20px boşluk olusturmustur.Negatif degerler alabilir aradaki
+                boşlugu kaybedip iç içe girebilir
+              </p>  
+              </div>
+              </div>
+           </div>
+
+        </div>
+    </div>
+
+
+    <script
+    src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"
+  ></script>
+  <script>
+      document.getElementById('familyD').addEventListener('click',()=>{
+        document.getElementById('family').style.fontFamily="Area";
+      });
+
+/*               Text align */
+        document.getElementById('end').addEventListener('click',()=>{
+            document.getElementById("metinsel").style.textAlign="end";
+        });
+
+        document.getElementById('left').addEventListener('click',()=>{
+            document.getElementById("metinsel").style.textAlign="left";
+        });
+        document.getElementById('right').addEventListener('click',()=>{
+            document.getElementById("metinsel").style.textAlign="right";
+        });
+        document.getElementById('center').addEventListener('click',()=>{
+            document.getElementById("metinsel").style.textAlign="center";
+        });
+        document.getElementById('justify').addEventListener('click',()=>{
+            document.getElementById("metinsel").style.textAlign="justify";
+        });
+/*Girinti*/
+
+        document.getElementById('girinti').addEventListener('click',()=>{
+
+                  document.getElementById('girintiMetin').style.textIndent="120px;"
+                  document.getElementById('sonuc').style.display="inline";
+        });
+         </script>
+  
+</body>
+</html>

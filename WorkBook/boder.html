@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Selected</title>
+    <link rel="stylesheet" href="/tasarim.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="accordion sinasi" id="accordionExample">
+      <!--Özellikleri -->
+      <div class="card">
+        <div class="card-header" id="headingOne">
+          <h2 class="mb-0">
+            <button
+              class="btn btn-link"
+              type="button"
+              data-toggle="collapse"
+              data-target="#collapseOne"
+              aria-expanded="true"
+              aria-controls="collapseOne"
+            >
+              Border-Style
+            </button>
+          </h2>
+        </div>
+
+        <div
+          id="collapseOne"
+          class="collapse show"
+          aria-labelledby="headingOne"
+          data-parent="#accordionExample"
+        >
+          <div class="card-body">
+            Border denilen şey html içindeki tagları cevreleyen deafultu hidden
+            olarak gelen çizigidir.
+            <ul>
+              <li>
+                <h3>1.Stil Verme</h3>
+                <p>
+                  Stil vermek kenarlıgın türüdür istenirse çizgli yada düz çizgi
+                  olabilir
+                </p>
+                <xmp>p { border-style:solid }</xmp>
+                <strong>solid düz çizgidir</strong><br />
+                <p style="border-style:solid; display: inline-block;">
+                  Burda yazılanların cevresi düz çizgi ile çevrelenecektir
+                </p>
+              </li>
+              <li>
+                <h3>2.Kenarlık Kalınlıgı</h3>
+                <br />
+                <p
+                  style="border-style: solid; border-width: 10px; display: inline-block;"
+                >
+                  Buradaki Yazı digerine göre knearlık kalıngı farklı ve 10 px
+                  kadardır
+                </p>
+                <xmp>p { border-style:solid border-width:10px}</xmp>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!--Tek tek özellik atama-->
+      <div class="card">
+        <div class="card-header" id="headingTwo">
+          <h2 class="mb-0">
+            <button
+              class="btn btn-link collapsed"
+              type="button"
+              data-toggle="collapse"
+              data-target="#collapseTwo"
+              aria-expanded="false"
+              aria-controls="collapseTwo"
+            >
+              Her Kenarlık için tek tek atama
+            </button>
+          </h2>
+        </div>
+        <div
+          id="collapseTwo"
+          class="collapse"
+          aria-labelledby="headingTwo"
+          data-parent="#accordionExample"
+        >
+          <div class="card-body">
+            <strong
+              >İstenirse her kenarlık için ayarı ayrı özellikler verilebilir
+            </strong>
+            <p
+              style="border-style:solid; border-width:5px; border-left-color: brown; 
+                   background-color: gray;"
+            >
+              Sol taraf kırmızı ren olarak atandı
+            </p>
+            <xmp
+>p { 
+                    border-style:solid; //çerçeve türü
+                    border-width:5px;   //çerçeve kalınlıgı
+                    border-left-color: brown; //sol çerçeve  rengi
+                    background-color: gray;  //arka plan rengi
+                  }</xmp
+            >
+            <p
+              style="border-style: solid;border-radius: 5px; border-left-width: 10px ; border-left-color: blue;"
+            >
+              istenirse tüm kodlar tek satırda yazılabilir
+              <strong>border-left :6px solid red </strong>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

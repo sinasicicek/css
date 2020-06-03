@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Selected</title>
+    <link rel="stylesheet" href="/tasarim.css" />
+    <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+    crossorigin="anonymous"
+  />
+  </head>
+  <body>
+  
+      <div class="accordion sinasi" id="accordionExample">
+
+        <!--İd Seçimi -->
+          <div class="card">
+            <div class="card-header" id="headingOne">
+              <h2 class="mb-0">
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                 İd ile Seçmek 
+                </button>
+              </h2>
+            </div>
+        
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+              <div class="card-body">
+                      Html tagının içersine verdigimiz id seçmek için css tarafında #
+                      işareti ile id adı yazılır  
+                    <xmp>#metin { font-size :20px ;}</xmp>
+              </div>
+            </div>
+          </div>
+
+      <!--class seçimi-->
+          <div class="card">
+            <div class="card-header" id="headingTwo">
+              <h2 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Class ile Seçmek
+                </button>
+              </h2>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+              <div class="card-body">
+                    Html elementine verilen class adını seçmek için nokta konulduktan
+                    sonra class adı yazılır
+                   <xmp> .class_adi { background-color:red ;} </xmp>
+
+              </div>
+            </div>
+          </div>
+            <!--Cocuk Seçici-->
+          <div class="card">
+            <div class="card-header" id="headingThree">
+              <h2 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                 Cocuk Seçiciler
+                </button>
+              </h2>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+              <div class="card-body">
+              p elementinin içindeki img dosyasına ulaşmak için : 
+              <xmp>p h1 { font-size: 20px ; }</xmp>
+              </div>
+            </div>
+          </div>
+
+
+             <!--İç İçe Cocuk Seçici-->
+             <div class="card">
+                <div class="card-header" id="headingThree">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#icice" aria-expanded="false" aria-controls="collapseThree">
+                        İç İçe Cocuk Seçiciler
+                    </button>
+                  </h2>
+                </div>
+                <div id="icice" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                  <div class="card-body">
+                    <xmp>
+                    <p>
+                      Html tagı içinde bulunan
+                       span tagına 
+                       <span>bu <i>tag</i></span> 
+                       ulaşmakiçin
+                    </p>
+                    </xmp>
+                  <xmp>  p span >i { font-size: 20px ; }</xmp>
+                  p tagı içindeki span tagı içinde bulunan i tagı ulaşarak özelligini degiştiriyoruz
+                  </div>
+                </div>
+             </div>
+        </div>
+    </div>
+
+
+    <script
+    src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"
+  ></script>
+  </body>
+</html>
